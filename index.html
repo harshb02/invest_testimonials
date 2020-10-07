@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="app.css">
+
+    <title>Testimonials</title>
+  </head>
+  
+  <body>
+  <header>
+            <nav>
+               <div class="name">
+                  DEEPEE INVESTMENT CONSULTANTS
+               </div>
+               <div class="menu">
+                  <ul>
+                     <li><a href="file:///D:/Udemy/INVESTMENT%20CONSULTANT/Starter/index.html">Home</a></li>
+                     <li><a href="#">About us</a></li>
+                     <li><a href="#">Services</a></li>
+                     <li><a href="file:///D:/Udemy/INVESTMENT%20CONSULTANT/Starter/testimonials.html">Client Reviews</a></li>
+                     <div class="dropdown">
+                        <li> <a href=""><i class="fa fa-phone"></i></span></a></li>
+                        <div class="dropdown-content">
+                          <a href="#">Harsh</a>
+                          <a href="#">Harsh</a>
+                          <a href="#">Harsh</a>
+                        </div>
+                    </div>       
+                    <li>
+                      <a id="ContactModalOpen" class="nav-link">Get in Touch</a>
+                    </li>
+                  </ul>
+               </div>
+            </nav>
+   </header>
+   <div id="ContactModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="content">
+        <!-- Contact Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title"> Get in touch with us </h2>
+          <button type="button" class="close" id="ContactModalClose">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form action="/contact-us" method="POST">
+              <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-user"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" name="testimonials[name]" placeholder="Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-envelope"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" name="testimonials[Email]" placeholder="Email Address">
+                </div>
+              </div>
+            <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-phone"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" name="testimonials[Phone]" placeholder="Phone Number">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-edit"></i></div>
+                </div>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="testimonials[Query]" placeholder="Query"></textarea>
+                </div>
+          </div>
+            <div class="form-row">
+                <a href="" class="cancel-form-button ml-auto" data-dismiss="modal">Cancel</a>
+                <a href="" class="suggestion-form-button ml-1">Submit</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+ <section class="contact-page" id="contact-page">
+  <div class="container-fluid">
+        <div class="row imag">
+      
+            <div class="layer1"> 
+            <h1>CLIENT REVIEWS</h1>
+            <h6>Did you like our services? Share your experience of working with us.</h6>
+            <a id="FeedbackModalOpen" class="touch">Give Feedback</a>
+          </div>
+        </div>
+    </div>
+</section>
+<div id="FeedbackModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="content">
+        <!-- Contact Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title"> Give us a Review </h2>
+          <button type="button" class="close" id="FeedbackModalClose">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form action="/contact-us" method="POST">
+              <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-user"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" name="testimonials[name]" placeholder="Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-briefcase"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" name="testimonials[Email]" placeholder="Company Name">
+                </div>
+              </div>
+            <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-briefcase"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" name="testimonials[Phone]" placeholder="Designation">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-edit"></i></div>
+                </div>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="testimonials[Query]" placeholder="Feedback"></textarea>
+                </div>
+          </div>
+            <div class="form-row">
+                <a id="#" class="servic">Submit</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<body>
+<section class="client" id="client">
+    <div class="container mt-5">
+    <h4 class="serr">HAVE A LOOK ON</h4>
+    <h1> WHAT OUR CLIENTS SAY ABOUT US</h1>
+
+        <div class="card-columns">
+                <div class="client-review card">
+                    <blockquote>
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.<br> ~Peter F. Drucker<br> 
+                     ~Peter F. Drucker</h3>
+                    </blockquote>
+                  </div>
+                   <div class="client-review card">
+                    <blockquote>
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br> ~Peter F. Drucker</h3>
+                    </blockquote>
+                  </div>
+                  <div class="client-review card">
+                    <blockquote>
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.<br> ~Peter F. Drucker</h3>
+                    </blockquote>
+                  </div>
+               <div class="client-review card">
+                    <blockquote>
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br> ~Peter F. Drucker</h3>
+                    </blockquote>
+                  </div>
+    
+                <div class="client-review card">
+                    <blockquote>
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.<br> ~Peter F. Drucker</h3>
+                    </blockquote>
+                  </div>
+                <div class="client-review card">
+                    <blockquote>
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.Lorem ipsum dolor sit amet, consectetur adipisicing elit <br> ~Peter F. Drucker</h3>
+                    </blockquote>
+                  </div>
+                <div class="client-review card">
+                    <blockquote>
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>  ~Peter F. Drucker</h3>
+                    </blockquote>
+                  </div>
+
+               <div class="client-review card">
+                    <blockquote>
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.<br> ~Peter F. Drucker</h3>
+                    </blockquote>
+                  </div>
+            
+               <div class="client-review card">
+                    <blockquote>
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> ~Peter F. Drucker</h3>
+                    </blockquote>
+                  </div>
+               <div class="client-review card">
+                    <blockquote>
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.<br> ~Peter F. Drucker</h3>
+                    </blockquote>
+                  </div>
+              <div class="client-review card">
+                    <blockquote>
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br> ~Peter F. Drucker</h3>
+                    </blockquote>
+                  </div>
+
+            
+        </div>
+
+    </div>
+
+</section>
+  <footer class="foot">
+  
+<h3>FOLLOW DEEPEE INVESTMENT CONSULTANTS</h3>
+    <ul class="social-network social-circle">
+      <li class="list-inline-item scn "><a class="icoLinkedin" href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+      <li class="list-inline-item scn "><a class="icoTwitter" href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+      <li class="list-inline-item scn"><a class="icoFacebook" href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+     <li class="list-inline-item scn"><a class="icoInstagram" href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+  </ul>
+ 
+   <ul>
+       <li class="list-inline-item info"><i class="fa fa-map-marker"></i><p>Greater Noida</p> </li>
+      <li class="list-inline-item info"><i class="fa fa-phone"></i><p>+91-9810538211</p></li>
+      <li class="list-inline-item info"><i class="fa fa-envelope"></i><p><a href="mailto:bajaj.alok30@gmail.com">bajaj.alok30@gmail.com</a></p></li>
+      </ul>
+    </footer>
+<section class="sub-footer">
+<p>Made with <i class="fa fa-heart"></i> by ASR INNOVATIONS </p>
+</section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+     <script src="js/script.js"></script>
+  </body>
+</html>
